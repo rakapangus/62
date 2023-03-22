@@ -6,6 +6,27 @@
 <title>загадка</title>
 </head>
 <body>
+  <script>           
+setInterval(function() {
+  var cd = new Date();
+  var clockdat = document.getElementById("clockdat");
+  clockdat.innerHTML = cd.toLocaleTimeString();
+}, 1000);
+</script>
+
+<body    
+<div class="center" style="background-color: #3b424a; padding:5px;">
+  <span style="color:aqua">Сегодня:</span>
+  <span style="color:silver; font-size:14px;">
+  <script>
+      document.write(date+" ");
+      document.write(thismonth+ " "+thisyear+" "+"года"+" — "+ DayofWeek);
+  </script>
+  (<span id="clockdat" style="color:aqua;"></span>)
+  </span>
+</div>
+  
+</body
 <!--Создаём таблицу контейнер, которой задаём следующее
 оформление:
 border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
